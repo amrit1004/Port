@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <h2 align="center">
   Portfolio Website - v2.0<br/>
   <a href="https://Amrit Singhal.vercel.app/" target="_blank">Amrit Singhal.tech</a>
@@ -74,3 +75,6 @@ You will find all the components used and you can edit your information accordin
 Give a ⭐ if you like this website!
 
 <a href="https://www.buymeacoffee.com/Amrit Singhal4419" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-violet.png" alt="Buy Me A Coffee" height= "60px" width= "217px" ></a>
+=======
+
+>>>>>>> 838989bb207f3d15d717ad29619799b12c51e6b3
