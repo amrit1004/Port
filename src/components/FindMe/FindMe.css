@@ -1,0 +1,55 @@
+.findme-section {
+  position: relative !important;
+  padding-top: 150px !important;
+  padding-bottom: 30px !important;
+  background-image: var(--section-background-color) !important;
+}
+
+.findme-about {
+  text-align: center !important;
+  color: white !important;
+  padding-bottom: 50px !important;
+}
+
+.findme-about h1 {
+  font-size: 2.6em !important;
+  padding-bottom: 20px !important;
+}
+
+.findme-icons {
+  display: flex !important;
+  justify-content: center !important;
+  gap: 25px;
+  padding-left: 0 !important;
+  list-style: none !important;
+  margin-top: 30px !important;
+}
+
+.social-icons {
+  display: inline-block !important;
+  padding-right: 15px !important;
+  padding-left: 15px !important;
+}
+
+.icon-colour {
+  color: #623686 !important;
+}
+
+.social-icons a {
+  width: 50px !important;
+  height: 50px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  border-radius: 50% !important;
+  border: 2px solid #623686 !important;
+  transition: all 0.3s ease-in-out !important;
+  font-size: 1.7em !important;
+}
+
+.social-icons a:hover {
+  background-color: #623686 !important;
+  color: white !important;
+  box-shadow: 0 0 20px #623686 !important;
+  transform: scale(1.1) !important;
+} 

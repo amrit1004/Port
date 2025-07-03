@@ -6,14 +6,20 @@ import Techstack from "./Techstack";
 import Aboutcard from "./AboutCard";
 import laptopImg from "../../Assets/about.png";
 import Toolstack from "./Toolstack";
+import useScrollAnimation from "../hooks/useScrollAnimation";
 
 function About() {
+  const aboutRef = useScrollAnimation();
+  const skillsRef = useScrollAnimation();
+  const toolsRef = useScrollAnimation();
+  const githubRef = useScrollAnimation();
+
   return (
     <Container fluid className="about-section">
       <Particle />
 
       <Container>
-        <Row style={{ justifyContent: "center", padding: "10px" }}>
+        <Row style={{ justifyContent: "center", padding: "10px" }} ref={aboutRef} className="section-animate">
           <Col
             md={7}
             style={{
@@ -37,17 +43,23 @@ function About() {
           </Col>
         </Row>
 
-        <h1 className="project-heading">
-          Professional <strong className="purple">Skillset</strong>
-        </h1>
-        <Techstack />
+        <div ref={skillsRef} className="section-animate">
+          <h1 className="project-heading">
+            Professional <strong className="purple">Skillset</strong>
+          </h1>
+          <Techstack />
+        </div>
 
-        <h1 className="project-heading">
-          <strong className="purple">Tools</strong> I use
-        </h1>
-        <Toolstack />
+        <div ref={toolsRef} className="section-animate">
+          <h1 className="project-heading">
+            <strong className="purple">Tools</strong> I use
+          </h1>
+          <Toolstack />
+        </div>
 
-        <Github />
+        <div ref={githubRef} className="section-animate">
+          <Github />
+        </div>
       </Container>
     </Container>
   );

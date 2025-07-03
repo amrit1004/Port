@@ -741,3 +741,42 @@ button:focus {
 .fork-btn-inner::after {
   display: none !important;
 }
+
+/* Scroll Animations */
+.section-animate {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease-out;
+}
+
+.section-animate.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.stagger-animate > * {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease-out;
+}
+
+.stagger-animate.animate > * {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.stagger-animate.animate > *:nth-child(1) { transition-delay: 0.1s; }
+.stagger-animate.animate > *:nth-child(2) { transition-delay: 0.2s; }
+.stagger-animate.animate > *:nth-child(3) { transition-delay: 0.3s; }
+.stagger-animate.animate > *:nth-child(4) { transition-delay: 0.4s; }
+.stagger-animate.animate > *:nth-child(5) { transition-delay: 0.5s; }
+
+/* Fade animations */
+.fade-animate {
+  opacity: 0;
+  transition: opacity 0.8s ease-out;
+}
+
+.fade-animate.animate {
+  opacity: 1;
+}
