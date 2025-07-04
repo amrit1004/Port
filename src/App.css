@@ -50,6 +50,12 @@
   }
 }
 
+@media (max-width: 480px) {
+  .responsive-heading {
+    font-size: calc(1.3em + 1vw) !important;
+  }
+}
+
 /* Responsive Spacing */
 .section-padding {
   padding: calc(2rem + 2vw) 0;
@@ -58,6 +64,12 @@
 @media (max-width: 768px) {
   .section-padding {
     padding: calc(1.5rem + 1.5vw) 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-padding {
+    padding: calc(1rem + 1vw) 0;
   }
 }
 
@@ -73,6 +85,8 @@
 @media (min-width: 576px) {
   .container {
     max-width: 540px;
+    padding-right: 10px;
+    padding-left: 10px;
   }
 }
 
@@ -98,6 +112,8 @@
 .img-fluid {
   max-width: 100%;
   height: auto;
+  display: block;
+  margin: 0 auto;
 }
 
 /* Responsive Text */
@@ -119,6 +135,7 @@ button,
   min-height: 44px;
   min-width: 44px;
   padding: 8px 16px;
+  touch-action: manipulation;
 }
 
 /* Responsive Grid Helpers */
@@ -134,6 +151,18 @@ button,
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
+}
+
+@media (max-width: 576px) {
+  [class*="col-"] {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  
+  .row {
+    margin-right: -10px;
+    margin-left: -10px;
+  }
 }
 
 /* Responsive Utilities */
@@ -185,10 +214,186 @@ button,
 /* Fix for mobile touch targets */
 @media (max-width: 768px) {
   a, button, input, select, textarea {
-    font-size: 16px !important; /* Prevents iOS auto-zoom on input fields */
+    font-size: 16px !important;
   }
   
   a, button {
-    padding: 12px !important; /* Larger touch targets on mobile */
+    padding: 12px !important;
+  }
+}
+
+/* Responsive Navigation */
+@media (max-width: 768px) {
+  .navbar-nav {
+    padding: 1rem 0;
+  }
+  
+  .navbar-toggler {
+    padding: 0.5rem;
+  }
+}
+
+/* Responsive Sections */
+@media (max-width: 576px) {
+  section {
+    padding: 50px 0;
+  }
+  
+  .section-title {
+    margin-bottom: 30px;
+  }
+}
+
+/* Responsive Cards */
+@media (max-width: 576px) {
+  .card {
+    margin-bottom: 20px;
+  }
+}
+
+/* Responsive Forms */
+@media (max-width: 576px) {
+  form {
+    padding: 15px;
+  }
+  
+  input, textarea {
+    margin-bottom: 15px;
+  }
+}
+
+/* Responsive Tables */
+@media (max-width: 768px) {
+  table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}
+
+/* Responsive Icons */
+@media (max-width: 576px) {
+  .icon {
+    font-size: 1.5em !important;
+  }
+}
+
+/* Home Component Responsive Styles */
+.home-section {
+  position: relative;
+  padding-top: 150px;
+  padding-bottom: 30px;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.home-content {
+  padding: 20px 0;
+}
+
+.home-header {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.heading {
+  font-size: 2.6em;
+  font-weight: 700;
+  padding-bottom: 20px;
+}
+
+.heading-name {
+  font-size: 2.5em;
+  padding-bottom: 15px;
+}
+
+.main-name {
+  color: #cd5ff8;
+}
+
+.type-container {
+  min-height: 80px;
+}
+
+.home-img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+@media (max-width: 1200px) {
+  .home-section {
+    padding-top: 120px;
+  }
+  
+  .heading {
+    font-size: 2.3em;
+  }
+  
+  .heading-name {
+    font-size: 2.2em;
+  }
+}
+
+@media (max-width: 992px) {
+  .home-section {
+    padding-top: 100px;
+  }
+  
+  .heading {
+    font-size: 2em;
+    text-align: center;
+  }
+  
+  .heading-name {
+    font-size: 1.9em;
+    text-align: center;
+  }
+  
+  .type-container {
+    text-align: center !important;
+    padding: 20px 0 !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .home-section {
+    padding-top: 80px;
+  }
+  
+  .heading {
+    font-size: 1.8em;
+  }
+  
+  .heading-name {
+    font-size: 1.7em;
+  }
+  
+  .home-img-container img {
+    max-height: 350px !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .home-section {
+    padding-top: 60px;
+  }
+  
+  .heading {
+    font-size: 1.6em;
+  }
+  
+  .heading-name {
+    font-size: 1.5em;
+  }
+  
+  .home-img-container img {
+    max-height: 280px !important;
+  }
+  
+  .type-container {
+    min-height: 60px;
   }
 }

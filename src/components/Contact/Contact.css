@@ -31,6 +31,7 @@
   color: white;
   font-size: 1.3em;
   margin-bottom: 20px;
+  line-height: 1.6;
 }
 
 .contact-form-container {
@@ -40,6 +41,7 @@
   padding: 40px !important;
   box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.2);
   width: 100%;
+  max-width: 800px;
   margin: 0 auto;
 }
 
@@ -65,6 +67,7 @@
 .contact-textarea:focus {
   box-shadow: 0 0 0 3px rgba(212, 88, 244, 0.3) !important;
   transform: translateY(-2px);
+  outline: none !important;
 }
 
 .contact-textarea {
@@ -143,14 +146,39 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 992px) {
+  .contact-section {
+    padding-top: 100px !important;
+    padding-bottom: 100px !important;
+  }
+
+  .contact-header h1 {
+    font-size: 2.3em;
+  }
+
+  .contact-header p {
+    font-size: 1.2em;
+  }
+
+  .contact-form-container {
+    padding: 30px !important;
+  }
+}
+
+@media (max-width: 768px) {
   .contact-section {
     padding-top: 80px !important;
     padding-bottom: 80px !important;
+    min-height: auto !important;
   }
 
   .contact-form-container {
     padding: 25px !important;
+    margin: 0 15px;
+  }
+
+  .contact-header {
+    padding-bottom: 30px;
   }
 
   .contact-header h1 {
@@ -159,6 +187,7 @@
 
   .contact-header p {
     font-size: 1.1em;
+    margin-bottom: 15px;
   }
 
   .contact-textarea {
@@ -179,5 +208,51 @@
   .status-message {
     padding: 12px;
     font-size: 0.95em;
+    margin: 15px -10px 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .contact-section {
+    padding-top: 60px !important;
+    padding-bottom: 60px !important;
+  }
+
+  .contact-form-container {
+    padding: 20px !important;
+    margin: 0 10px;
+  }
+
+  .contact-header h1 {
+    font-size: 2em;
+  }
+
+  .contact-header p {
+    font-size: 1em;
+  }
+
+  .contact-input,
+  .contact-textarea {
+    font-size: 0.95em !important;
+    padding: 10px 12px !important;
+  }
+
+  .contact-textarea {
+    min-height: 150px !important;
+  }
+
+  .contact-submit-btn {
+    font-size: 1em;
+    padding: 10px 0;
+  }
+
+  .send-icon {
+    font-size: 1.1em;
+  }
+
+  .status-message {
+    padding: 10px;
+    font-size: 0.9em;
+    margin: 12px -8px 0;
   }
 } 
