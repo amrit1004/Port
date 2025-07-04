@@ -3,12 +3,6 @@ import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 import useScrollAnimation from "../hooks/useScrollAnimation";
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
 
 function Projects() {
   const titleRef = useScrollAnimation();
@@ -27,71 +21,75 @@ function Projects() {
           </p>
         </div>
 
-        <Row style={{ justifyContent: "center", paddingBottom: "10px" }} ref={projectsRef} className="stagger-animate">
+        <Row
+          style={{ justifyContent: "center", paddingBottom: "10px" }}
+          ref={projectsRef}
+          className="stagger-animate"
+        >
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
+              imgPath="/images/chatapp.jpg"
               isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              ghLink="https://github.com/Amrit Singhal4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
+              title="ChatApp"
+              description="Built a real-time Chat Application using the MERN stack with WebSocket integration via Socket.IO for instant bi-directional communication. Implemented user authentication with JWT, real-time messaging, typing indicators, and online/offline user tracking. Designed a responsive UI with React.js, integrated RESTful APIs with Express.js, and used MongoDB for chat and user data persistence. Focused on creating a seamless and interactive messaging experience with support for one-on-one and group conversations."
+              ghLink="https://github.com/amrit1004/chat-app"
+              demoLink='https://chat-app-xnkn.onrender.com/'
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath="/images/bank.jpg"
               isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              ghLink="https://github.com/Amrit Singhal4419/Bits-0f-C0de"
-              demoLink="https://blogs.soumya-jit.tech/"
+              title="Horizon"
+              description="Developed a modern FinTech-Real Estate Web Application using Next integrated with Appwrite for secure authentication and Plaid for bank account linking and financial data retrieval. The platform allows users to manage real estate payments, view transaction histories, and monitor connected bank accounts in real-time. Incorporated server-side rendering (SSR) for performance and SEO, used STC for efficient styling, and implemented role-based dashboards for agents and clients to streamline property transactions and payment workflows"
+              ghLink="https://github.com/amrit1004/horizon"
+              demoLink="https://horizon-xi.vercel.app/"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={editor}
+              imgPath="/images/estate.jpg"
               isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              ghLink="https://github.com/Amrit Singhal4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"              
+              title="Mern-Estate"
+              description="Built a full-featured Real Estate Web Application using the MERN stack (MongoDB, Express.js, React.js, Node.js) to allow users to buy, sell, and rent properties. Integrated secure user authentication with JWT, property listing with images, filtering based on location and price, and a dashboard for agents and users to manage listings. Designed with a focus on responsiveness, usability, and real-world scalability"
+              ghLink="https://github.com/amrit1004/mern-estate"
+              demoLink="https://mern-estate-cyan.vercel.app/"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={leaf}
+              imgPath="/images/court.jpg"
               isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              ghLink="https://github.com/Amrit Singhal4419/Plant_AI"
-              demoLink="https://plant49-ai.herokuapp.com/"
+              title="Court Case Management System"
+              description="Developed an E-Portal for efficient Court Case Management using Node.js, Express, and Next.js, enabling lawyers, judges, and court staff to manage and track legal cases digitally. Integrated user roles, secure login, and RESTful APIs for case filing, scheduling, and document management. Aimed at reducing paperwork and streamlining the judicial process through a responsive, role-based web interface."
+
+
+              ghLink="https://github.com/amrit1004/court"
+              //demoLink="https://plant49-ai.herokuapp.com/"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={suicide}
+              imgPath="/images/inotebook.jpg"
               isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in suicide prevention."
-              ghLink="https://github.com/Amrit Singhal4419/AI_For_Social_Good"
-              // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
+              title="iNotebook"
+              description="Developed a secure and responsive Notes Application using the MERN stack, enabling users to manage personal notes with real-time CRUD operations. Incorporated user authentication and authorization using JWT, ensuring data privacy."
+              ghLink="https://github.com/amrit1004/inotebok"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={emotion}
+              imgPath="/images/newsapp.jpg"
               isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              ghLink="https://github.com/Amrit Singhal4419/Face_And_Emotion_Detection"
-              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
+              title="NewMonkey-NewsApp"
+              description="Built a dynamic and responsive News Application using React.js, which fetches real-time news articles from external News API sources. Integrated category-based filtering (e.g., sports, technology, business) and infinite scroll for seamless content delivery. Designed with a clean UI to enhance readability and provide users with up-to-date news coverage from around the world."
+              ghLink="https://github.com/Aaryan18-code/Newsapp--React"
+              // demoLink="https://your-demo-link.com"
             />
           </Col>
         </Row>
