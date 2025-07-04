@@ -38,7 +38,7 @@ function FindMe() {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://twitter.com/your-twitter"
+                  href="https://https://x.com/AmritSinghal45"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour home-social-icons"
@@ -58,7 +58,7 @@ function FindMe() {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://www.instagram.com/your-instagram"
+                  href="https://www.instagram.com/amritsinghal45"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour home-social-icons"
@@ -68,7 +68,7 @@ function FindMe() {
               </li>
               <li className="social-icons">
                 <a
-                  href="mailto:your.email@example.com"
+                  href="mailto:amritsinghal2211@gmail.com"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour home-social-icons"

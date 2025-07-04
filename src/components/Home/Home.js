@@ -7,6 +7,7 @@ import Type from "./Type";
 import About from "../About/About";
 import Experience from "../Experience/Experience";
 import Projects from "../Projects/Projects";
+import Contact from "../Contact/Contact";
 import Footer from "../Footer";
 import useScrollAnimation from "../hooks/useScrollAnimation";
 
@@ -60,6 +61,9 @@ function Home() {
       </div>
       <div id="project">
         <Projects />
+      </div>
+      <div id="contact">
+        <Contact />
       </div>
       <Footer />
     </section>
