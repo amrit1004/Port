@@ -13,9 +13,9 @@ function Home2() {
   return (
     <Container fluid className="home-about-section" id="about">
       <Container>
-        <Row>
-          <Col md={8} className="home-about-description">
-            <h1 style={{ fontSize: "2.6em" }}>
+        <Row className="align-items-center">
+          <Col lg={8} md={12} className="home-about-description">
+            <h1 style={{ fontSize: "2.6em" }} className="responsive-heading">
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
@@ -29,7 +29,7 @@ function Home2() {
               and love building scalable, real-world applications.
               <br />
               <br />
-              I’ve worked on projects involving{" "}
+              I've worked on projects involving{" "}
               <i>
                 <b className="purple">CI/CD, WebSockets, APIs, and PostgreSQL</b>
               </i>{" "}
@@ -42,9 +42,9 @@ function Home2() {
               <b className="purple">Blockchain</b>.
             </p>
           </Col>
-          <Col md={4} className="myAvtar">
+          <Col lg={4} md={12} className="myAvtar">
             <Tilt>
-              <img src={myImg} className="img-fluid" alt="avatar" />
+              <img src={myImg} className="img-fluid rounded" alt="avatar" style={{ maxHeight: '450px', width: 'auto' }} />
             </Tilt>
           </Col>
         </Row>

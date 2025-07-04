@@ -36,3 +36,159 @@
     transform: rotate(360deg);
   }
 }
+
+/* Responsive Typography */
+.responsive-heading {
+  font-size: calc(1.8em + 1vw) !important;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+  .responsive-heading {
+    font-size: calc(1.5em + 1vw) !important;
+  }
+}
+
+/* Responsive Spacing */
+.section-padding {
+  padding: calc(2rem + 2vw) 0;
+}
+
+@media (max-width: 768px) {
+  .section-padding {
+    padding: calc(1.5rem + 1.5vw) 0;
+  }
+}
+
+/* Responsive Container */
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+/* Responsive Images */
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Responsive Text */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 769px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+/* Touch-friendly Buttons */
+button, 
+.btn {
+  min-height: 44px;
+  min-width: 44px;
+  padding: 8px 16px;
+}
+
+/* Responsive Grid Helpers */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+[class*="col-"] {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/* Responsive Utilities */
+.d-none {
+  display: none !important;
+}
+
+.d-block {
+  display: block !important;
+}
+
+@media (min-width: 768px) {
+  .d-md-none {
+    display: none !important;
+  }
+  .d-md-block {
+    display: block !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .d-lg-none {
+    display: none !important;
+  }
+  .d-lg-block {
+    display: block !important;
+  }
+}
+
+/* Responsive Margins and Paddings */
+.m-auto {
+  margin: auto !important;
+}
+
+.mx-auto {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+@media (max-width: 768px) {
+  .m-sm-0 {
+    margin: 0 !important;
+  }
+  .p-sm-0 {
+    padding: 0 !important;
+  }
+}
+
+/* Fix for mobile touch targets */
+@media (max-width: 768px) {
+  a, button, input, select, textarea {
+    font-size: 16px !important; /* Prevents iOS auto-zoom on input fields */
+  }
+  
+  a, button {
+    padding: 12px !important; /* Larger touch targets on mobile */
+  }
+}

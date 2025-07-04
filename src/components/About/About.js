@@ -56,10 +56,6 @@ function About() {
           </h1>
           <Toolstack />
         </div>
-
-        <div ref={githubRef} className="section-animate">
-          <Github />
-        </div>
       </Container>
     </Container>
   );

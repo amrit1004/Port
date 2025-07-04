@@ -8,8 +8,8 @@ import emailjs from '@emailjs/browser';
 function Contact() {
   const form = useRef();
   const [formData, setFormData] = useState({
-    user_name: "",
-    user_email: "",
+    name: "",
+    email: "",
     message: ""
   });
   const [status, setStatus] = useState("");
@@ -23,18 +23,34 @@ function Contact() {
     setStatus("");
 
     try {
+      // Method 1: Using sendForm (recommended for your current setup)
       const result = await emailjs.sendForm(
-        'service_29qunak', // Replace with your EmailJS service ID
-        'template_m5bedqp', // Replace with your EmailJS template ID
+        'service_29qunak', // Your EmailJS service ID
+        'template_m5bedqp', // Your EmailJS template ID
         form.current,
-        'ROtU4EmDBiR1_JsAm' // Replace with your EmailJS public key
+        'ROtU4EmDBiR1_JsAm' // Your EmailJS public key
       );
+
+      // Alternative Method 2: Using send with explicit parameters
+      // const result = await emailjs.send(
+      //   'service_29qunak',
+      //   'template_m5bedqp',
+      //   {
+      //     from_name: formData.user_name,
+      //     from_email: formData.user_email,
+      //     to_name: 'Your Name', // Replace with your name
+      //     to_email: 'your-email@gmail.com', // Replace with your email
+      //     message: formData.message,
+      //     reply_to: formData.user_email
+      //   },
+      //   'ROtU4EmDBiR1_JsAm'
+      // );
 
       if (result.text === 'OK') {
         setStatus("Message sent successfully!");
         setFormData({
-          user_name: "",
-          user_email: "",
+          name: "",
+          email: "",
           message: ""
         });
       }
@@ -70,8 +86,8 @@ function Contact() {
                   <Form.Control
                     type="text"
                     placeholder="Your Name"
-                    name="user_name"
-                    value={formData.user_name}
+                    name="name"
+                    value={formData.name}
                     onChange={handleChange}
                     required
                     className="contact-input"
@@ -82,8 +98,8 @@ function Contact() {
                   <Form.Control
                     type="email"
                     placeholder="Your Email"
-                    name="user_email"
-                    value={formData.user_email}
+                    name="email"
+                    value={formData.email}
                     onChange={handleChange}
                     required
                     className="contact-input"
@@ -99,8 +115,13 @@ function Contact() {
                     onChange={handleChange}
                     required
                     className="contact-textarea"
+                    rows={5}
                   />
                 </Form.Group>
+
+                {/* Hidden fields for additional data */}
+                <input type="hidden" name="to_name" value="Amrit Singhal" />
+                <input type="hidden" name="reply_to" value={formData.email} />
 
                 <button 
                   type="submit" 
@@ -129,4 +150,4 @@ function Contact() {
   );
 }
 
-export default Contact; 
+export default Contact;

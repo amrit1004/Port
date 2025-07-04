@@ -780,3 +780,165 @@ button:focus {
 .fade-animate.animate {
   opacity: 1;
 }
+
+/* Global Responsive Styles */
+@media (max-width: 1200px) {
+  .home-section {
+    padding-top: 100px !important;
+  }
+  .home-content {
+    padding-top: 50px !important;
+    text-align: center !important;
+  }
+  .heading {
+    font-size: 2.3em !important;
+    text-align: center !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .heading {
+    font-size: 1.8em !important;
+    text-align: center !important;
+  }
+  .heading-name {
+    font-size: 1.5em !important;
+  }
+  .home-about-description {
+    text-align: center !important;
+  }
+  .home-about-body {
+    text-align: center !important;
+    padding: 15px !important;
+  }
+  .myAvtar {
+    padding-top: 30px !important;
+    padding-bottom: 20px !important;
+  }
+  .project-card-view {
+    margin: 10px !important;
+  }
+  .blog-card-view {
+    margin: 10px !important;
+  }
+  .tech-icons {
+    margin: 10px !important;
+    padding: 5px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 1rem 1rem !important;
+  }
+  .navbar-nav .nav-item {
+    margin-left: 0 !important;
+  }
+  .home-section {
+    padding-top: 80px !important;
+  }
+  .heading-name {
+    font-size: 1.3em !important;
+  }
+  .home-about-description h1 {
+    font-size: 2em !important;
+  }
+  .Typewriter__wrapper {
+    font-size: 1.2em !important;
+  }
+  .Typewriter__cursor {
+    font-size: 1.4em !important;
+  }
+  .home-social-icons {
+    font-size: 1em !important;
+  }
+  .project-heading {
+    font-size: 1.8em !important;
+    padding-top: 60px !important;
+  }
+}
+
+/* Tablet Specific Styles */
+@media (min-width: 768px) and (max-width: 991px) {
+  .home-content {
+    padding-top: 80px !important;
+  }
+  .home-about-description {
+    padding: 20px !important;
+  }
+  .tech-icons {
+    margin: 15px !important;
+  }
+  .project-card-view {
+    margin: 15px !important;
+  }
+}
+
+/* Ensure images are responsive */
+.img-fluid {
+  max-width: 100% !important;
+  height: auto !important;
+}
+
+/* Improve container padding for smaller screens */
+.container {
+  padding-right: 15px !important;
+  padding-left: 15px !important;
+}
+
+@media (max-width: 576px) {
+  .container {
+    padding-right: 10px !important;
+    padding-left: 10px !important;
+  }
+}
+
+/* Improve grid spacing for better mobile layout */
+.row {
+  margin-right: -10px !important;
+  margin-left: -10px !important;
+}
+
+[class*="col-"] {
+  padding-right: 10px !important;
+  padding-left: 10px !important;
+}
+
+/* Toast notification responsive styles */
+@media (max-width: 576px) {
+  .toast {
+    margin: 10px !important;
+    width: calc(100% - 20px) !important;
+  }
+}
+
+/* Improve button touch targets on mobile */
+@media (max-width: 767px) {
+  .btn {
+    padding: 8px 20px !important;
+    font-size: 14px !important;
+    min-height: 42px !important;
+  }
+  
+  .nav-link {
+    padding: 12px 15px !important;
+  }
+}
+
+/* Fix for overlapping elements */
+.section-animate {
+  overflow-x: hidden !important;
+}
+
+/* Improve card layouts on mobile */
+@media (max-width: 576px) {
+  .project-card-view, .blog-card-view {
+    margin: 10px 0 !important;
+    width: 100% !important;
+  }
+  
+  .card-img-top {
+    height: 200px !important;
+    object-fit: cover !important;
+  }
+}
