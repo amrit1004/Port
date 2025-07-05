@@ -14,7 +14,7 @@ import {
   AiOutlineUser,
   AiOutlineMail,
 } from "react-icons/ai";
-import pdf from "../Assets/amritlatest.pdf";
+import pdf from "../Assets/Amrit-resume.pdf";
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
@@ -110,17 +110,6 @@ function NavBar() {
                 <Nav.Link onClick={handleResumeClick} style={{ cursor: 'pointer' }}>
                   <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
                 </Nav.Link>
-              </Nav.Item>
-
-              <Nav.Item className="fork-btn">
-                <Button
-                  href="https://github.com/amrit1004/Port"
-                  target="_blank"
-                  className="fork-btn-inner"
-                >
-                  <CgGitFork style={{ fontSize: "1.2em" }} />{" "}
-                  <AiFillStar style={{ fontSize: "1.1em" }} />
-                </Button>
               </Nav.Item>
             </Nav>
           </Navbar.Collapse>
